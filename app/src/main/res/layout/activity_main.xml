@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/labelPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso (kg): 0"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"/>
+
+    <TextView
+        android:id="@+id/labelAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura (cm): 0"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="220"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu IMC será exibido aqui"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
